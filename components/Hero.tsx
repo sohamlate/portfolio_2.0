@@ -6,7 +6,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-36 flex items-center justify-between'>
+    <div className='pb-20 pt-35 flex items-center justify-between'>
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -29,8 +29,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex text-white justify-center relative my-20 z-10 w-full">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center justify-center">
+      <div className="flex flex-wrap-reverse pt-3 text-white justify-center relative my-20 z-10 w-full">
+        <div className="max-w-[89vw]  md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90">
             Building the Web of Tomorrow with Next.js
           </p>
@@ -44,17 +44,27 @@ const Hero = () => {
             Hi! I&apos;m Soham, a Full Stack Developer based in India.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex space-x-4">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+
+            <a target="_blank" href="https://drive.google.com/file/d/1PrjKfTSjer9ZrjnfMZUUHMo9_REVriyF/view?usp=sharing" download>
+              <MagicButton
+                title="Download CV"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
 
         
-        <div className="hidden md:block w-[40vw]">
+        <div className="hidden md:block w-[30vw]">
           <img
             src="https://res.cloudinary.com/dsy3ebkqc/image/upload/v1736176443/samples/cpz3eq8vspfyop8knerz.webp"  
             alt="Coding Hero"
