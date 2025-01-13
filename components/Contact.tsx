@@ -52,10 +52,10 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="text-white">
-      <p className="text-2xl inline-block mt-[3rem] ml-[6rem]">Contact me</p>
-      <div className="bg-white h-[0.7px] ml-[6rem] mr-[5rem]"></div>
-      <form onSubmit={handleSubmit} className="flex flex-col mt-[2rem] mx-[25%]">
+    <section id="contact" className="text-white mb-[3rem]">
+      <p className="text-2xl inline-block mt-[5rem] ml-[3rem]">Contact me</p>
+      <div className="bg-white h-[0.7px] ml-[3rem] mr-[3rem]"></div>
+      <form onSubmit={handleSubmit} className="flex flex-col mt-[3rem] mx-[20%]">
         <label className="text-sm mb-[0.5rem]">
           Name:
           <input
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
         </button>
       </form>
       {responseMessage && <p className="mt-[1rem] mx-[25%]">{responseMessage}</p>}
-    </div>
+    </section>
   );
 };
 
