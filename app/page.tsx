@@ -4,6 +4,7 @@ import { navItems } from "@/data/index";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import About from "@/components/About";
 import Project from "@/components/ProjectsSection"
+import Contact from "@/components/Contact"
 
 export default function Home() {
   console.log(navItems, "bvfdjsbfsdfkb");
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero></Hero>
         <About></About>
         <Project></Project>
+        <Contact></Contact>
       </div>
     </main>
   );

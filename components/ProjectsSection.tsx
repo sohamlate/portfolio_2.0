@@ -16,8 +16,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "PRESCRIPTPRO",
+    description: "Developed a prescription analysis platform that leverages GenAI for intelligent data extraction and AWS Textract for OCR to digitize medical records. Implemented secure APIs for integrating with Google Calendar and smart home devices like Google Home and Alexa to provide medication reminders. Designed a robust authentication system using bcrypt.js and JWT for secure user sessions. Utilized ReactJS for a user-friendly interface and NodeJS with ExpressJS and MongoDB for backend development, ensuring scalability and efficiency.",
     image: "https://res.cloudinary.com/dsy3ebkqc/image/upload/v1736519668/samples/bajky4pazvn4plwo50go.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/sohamlate/mindspark",
@@ -25,22 +25,24 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Portfolio Website",
+    description: "Built a responsive and dynamic portfolio website using Next.js and TypeScript, featuring interactive elements and animations to effectively showcase projects. Integrated Nodemailer for secure and reliable email communication via the contact form. Ensured optimal performance and seamless navigation through server-side rendering (SSR) and static site generation (SSG). Leveraged modern design principles to create a visually appealing and user-friendly interface.",
+    image: "https://res.cloudinary.com/dsy3ebkqc/image/upload/v1736772800/uenz0outhlzbtxfqyyzf.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/sohamlate/portfolio_2.0",
+    previewUrl: "https://yourportfolio.com"
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+    title: "UrbanFusion - Government Project Management Platform",
+    description: "Developed a comprehensive government project and resource management platform to streamline inter-departmental coordination. Built with ReactJS for a dynamic user interface and NodeJS with ExpressJS for backend operations. Implemented secure authentication using bcrypt.js and JWT, enabling role-based access control and secure data sharing. Designed an MVC architecture with normalized MongoDB schemas to ensure data integrity and scalability. Integrated Leaflet for geospatial mapping to visualize project locations and manage resources effectively. Utilized OAuth for seamless access control, ensuring secure integration with third-party services.",
+    image: "https://res.cloudinary.com/dsy3ebkqc/image/upload/v1736773208/ukjqcnqe1tsf3nlxblha.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/sohamlate/UrbanFusion",
+    previewUrl: "https://urban-fusion.vercel.app/"
+}
+
+
  
 ];
 
