@@ -42,7 +42,7 @@ const Hero = () => {
           />
 
           <p className="text-center mt-4 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Soham, a Full Stack Developer based in India.
+            Hi! I&apos;m Soham Late, a Full Stack Developer based in India.
           </p>
 
           <div className="flex space-x-4">
