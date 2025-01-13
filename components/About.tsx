@@ -17,8 +17,8 @@ const TAB_DATA: TabData[] = [
       <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>Mongodb</li>
+        <li>Mysql</li>
         <li>JavaScript</li>
         <li>React</li>
       </ul>
@@ -29,9 +29,23 @@ const TAB_DATA: TabData[] = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        
+        <li>
+          <strong>PICT College</strong>, Pune, India <br />
+          <span className="text-sm text-gray-300">B.Tech in Computer Engineering (CGPA: 9.02)</span> <br />
+          <span className="text-sm text-gray-300">2022 - Present</span>
+        </li>
+        <li>
+          <strong>Dnyantirth International College</strong>, Pune, India <br />
+          <span className="text-sm text-gray-300">Higher Secondary Certificate (HSC)</span> <br />
+          <span className="text-sm text-gray-300">2022 | Score: 88.17%</span>
+        </li>
+        <li>
+          <strong>Renavikar High School</strong>, Pune, India <br />
+          <span className="text-sm text-gray-300">Secondary School Certificate (SSC)</span> <br />
+          <span className="text-sm text-gray-300">2010 | Score: 91.60%</span>
+        </li>
       </ul>
-    ),
+    ),    
   },
  
 ];
@@ -80,13 +94,7 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
+           
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab)?.content}

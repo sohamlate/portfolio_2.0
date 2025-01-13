@@ -3,6 +3,7 @@ import Image from "next/image";
 import { navItems } from "@/data/index";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import About from "@/components/About";
+import Project from "@/components/ProjectsSection"
 
 export default function Home() {
   console.log(navItems, "bvfdjsbfsdfkb");
@@ -12,6 +13,7 @@ export default function Home() {
         <FloatingNav navItems={navItems}></FloatingNav>
         <Hero></Hero>
         <About></About>
+        <Project></Project>
       </div>
     </main>
   );
