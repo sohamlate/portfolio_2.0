@@ -9,6 +9,11 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+type NavItem = {
+  name: string;
+  link: string;
+};
+
 export const FloatingNav = ({
   navItems,
   className,
@@ -27,7 +32,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.00) {
         setVisible(false);
@@ -61,11 +66,13 @@ export const FloatingNav = ({
         )}
       >
        <Link href="#home">
-          <button className="text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-1 py-2 rounded-full">
+          <button className="text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white  py-2 rounded-full">
             <span>Home</span>
           </button>
         </Link>
-        {navItems.map((navItem: any, idx: number) => (
+
+        {
+        navItems.map((navItem: NavItem, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
@@ -73,7 +80,7 @@ export const FloatingNav = ({
               "relative dark:text-neutral-50 items-center px-2 flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
+            {/* <span className="block sm:hidden">{navItem.icon}</span> */}
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}

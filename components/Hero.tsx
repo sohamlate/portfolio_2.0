@@ -2,6 +2,7 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./MagicButton";
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
@@ -65,7 +66,7 @@ const Hero = () => {
 
         
         <div className="hidden md:block w-[30vw]">
-          <img
+          <Image
             src="https://res.cloudinary.com/dsy3ebkqc/image/upload/v1736176443/samples/cpz3eq8vspfyop8knerz.webp"  
             alt="Coding Hero"
             className="w-full h-auto object-cover"
